@@ -3,224 +3,153 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>NOIRVOID — Streetwear Concept Store</title>
-  <meta name="description" content="Loja conceito streetwear sofisticada com drops limitados, estética anime-inspired e referências sutis." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <meta
+    name="description"
+    content="Loja conceito streetwear sofisticada com camisetas oversized anime-inspired."
+  />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="noise"></div>
+  <header class="header">
+    <a href="#" class="logo">NOIR<span>VOID</span></a>
 
-  <header class="site-header" id="header">
-    <a class="brand" href="#top" aria-label="NOIRVOID home">
-      <span class="brand-mark"></span>
-      NOIR<span>VOID</span>
-    </a>
-
-    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
-      <span></span>
-      <span></span>
-    </button>
-
-    <nav class="site-nav" aria-label="Navegação principal">
-      <a href="#shop">Shop</a>
-      <a href="#drop">Drop</a>
+    <nav class="nav">
+      <a href="#drop">Drop 01</a>
+      <a href="#produto">Produto</a>
       <a href="#manifesto">Manifesto</a>
-      <a href="#waitlist">Lista</a>
+      <a href="#lista">Lista de espera</a>
     </nav>
   </header>
 
-  <main id="top">
-    <section class="hero section-padding">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">Drop 01 / Concept Store / Brasil</p>
-        <h1>Streetwear para quem entende a referência sem precisar explicar.</h1>
+  <main>
+    <section class="hero" id="drop">
+      <div class="hero-content">
+        <p class="tag">Streetwear / Anime-inspired / Limited Drop</p>
+
+        <h1>Streetwear para quem entende a referência.</h1>
+
         <p class="hero-description">
-          Peças oversized com estética sombria, cortes limpos e artes sutis inspiradas em energia, caos e cultura anime — sem personagem, sem logo óbvio, sem fantasia.
+          Camisetas oversized com estética urbana, visual sombrio e referências sutis.
+          O primeiro drop da NOIRVOID está em desenvolvimento.
         </p>
 
         <div class="hero-actions">
-          <a class="button button-primary" href="#shop">Ver coleção</a>
-          <a class="button button-ghost" href="#waitlist">Entrar na lista</a>
+          <a href="#produto" class="btn btn-primary">Ver conceito</a>
+          <a href="#lista" class="btn btn-secondary">Entrar na lista</a>
         </div>
       </div>
 
-      <div class="hero-visual reveal delay-1" aria-label="Camiseta conceito NOIRVOID">
-        <div class="product-frame">
-          <div class="product-badge">COMING SOON</div>
-          <div class="shirt shirt-main">
-            <div class="shirt-neck"></div>
-            <div class="shirt-sleeve left"></div>
-            <div class="shirt-sleeve right"></div>
-            <div class="shirt-body">
-              <span class="micro-symbol">∞</span>
-              <div class="energy-orb"></div>
-              <p>VOID TECHNIQUE</p>
-            </div>
-          </div>
-        </div>
+      <div class="hero-image">
+        <img
+          src="assets/mockup-camiseta-01.png"
+          alt="Mockup de camiseta oversized preta streetwear anime-inspired"
+        />
       </div>
     </section>
 
-    <section class="ticker" aria-label="Destaques da marca">
-      <div class="ticker-track">
-        <span>OVERSIZED FIT</span>
-        <span>LIMITED DROP</span>
-        <span>ANIME-INSPIRED</span>
-        <span>SUBTLE REFERENCES</span>
-        <span>PREMIUM BASICS</span>
-        <span>OVERSIZED FIT</span>
-        <span>LIMITED DROP</span>
-        <span>ANIME-INSPIRED</span>
-        <span>SUBTLE REFERENCES</span>
-        <span>PREMIUM BASICS</span>
-      </div>
-    </section>
-
-    <section class="collection section-padding" id="shop">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Shop preview</p>
-        <h2>Coleção conceito</h2>
-        <p>Produtos ainda em validação. Use esta página para testar desejo, captar contatos e medir qual peça gera mais interesse.</p>
+    <section class="product-section" id="produto">
+      <div class="product-image">
+        <img
+          src="assets/mockup-camiseta-01.png"
+          alt="Camiseta oversized preta com estampa frontal e traseira"
+        />
       </div>
 
-      <div class="product-grid">
-        <article class="product-card reveal">
-          <div class="product-image product-01">
-            <span class="drop-label">Drop 01</span>
-            <div class="mini-shirt"></div>
-          </div>
-          <div class="product-info">
-            <div>
-              <h3>Infinity Core Tee</h3>
-              <p>Black oversized / back print</p>
-            </div>
-            <span>R$ --</span>
-          </div>
-        </article>
+      <div class="product-info">
+        <p class="tag">Drop 01 / Concept Tee</p>
 
-        <article class="product-card reveal delay-1">
-          <div class="product-image product-02">
-            <span class="drop-label">Concept</span>
-            <div class="mini-shirt"></div>
-          </div>
-          <div class="product-info">
-            <div>
-              <h3>Blindfold Energy Tee</h3>
-              <p>Off-white / chest detail</p>
-            </div>
-            <span>R$ --</span>
-          </div>
-        </article>
+        <h2>Infinite Void Tee</h2>
 
-        <article class="product-card reveal delay-2">
-          <div class="product-image product-03">
-            <span class="drop-label">Limited</span>
-            <div class="mini-shirt"></div>
-          </div>
-          <div class="product-info">
-            <div>
-              <h3>Blue Domain Tee</h3>
-              <p>Washed black / sleeve mark</p>
-            </div>
-            <span>R$ --</span>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="featured section-padding" id="drop">
-      <div class="featured-media reveal">
-        <div class="large-shirt">
-          <div class="large-art">
-            <span></span>
-            <strong>DOMAIN_01</strong>
-          </div>
-        </div>
-      </div>
-
-      <div class="featured-copy reveal delay-1">
-        <p class="eyebrow">Produto destaque</p>
-        <h2>Back print forte. Frente limpa. Referência sutil.</h2>
         <p>
-          O primeiro conceito combina uma estampa grande nas costas com detalhe mínimo no peito. A ideia é parecer peça de marca, não camiseta de anime tradicional.
+          Camiseta oversized preta com arte principal nas costas e detalhe sutil no peito.
+          Uma peça conceito para validar o primeiro drop antes da produção oficial.
         </p>
 
-        <div class="spec-list">
-          <div>
-            <span>01</span>
-            <p>Modelagem oversized</p>
-          </div>
-          <div>
-            <span>02</span>
-            <p>Arte autoral inspirada, sem personagem</p>
-          </div>
-          <div>
-            <span>03</span>
-            <p>Drop limitado para validação</p>
-          </div>
+        <div class="product-details">
+          <span>Oversized fit</span>
+          <span>Black color</span>
+          <span>Back print</span>
+          <span>Limited concept</span>
         </div>
+
+        <a href="#lista" class="btn btn-primary">Quero ser avisado</a>
       </div>
     </section>
 
-    <section class="manifesto section-padding" id="manifesto">
-      <div class="manifesto-card reveal">
-        <p class="eyebrow">Manifesto</p>
-        <h2>Não queremos estampar personagens. Queremos estampar a sensação.</h2>
-        <p>
-          A marca nasce para transformar referências de anime em peças urbanas, adultas e usáveis. Cores, símbolos, aura, silêncio e composição. Quem conhece percebe. Quem não conhece ainda usa como streetwear.
-        </p>
-      </div>
-    </section>
-
-    <section class="lookbook section-padding" aria-label="Lookbook conceitual">
-      <div class="lookbook-item reveal">
+    <section class="cards-section">
+      <article class="card">
         <span>01</span>
-        <p>Black tee / wide pants / white sneakers</p>
-      </div>
-      <div class="lookbook-item reveal delay-1">
+        <h3>Estética premium</h3>
+        <p>
+          Visual escuro, urbano e sofisticado para parecer marca de streetwear real.
+        </p>
+      </article>
+
+      <article class="card">
         <span>02</span>
-        <p>Off-white tee / cargo / silver accessories</p>
-      </div>
-      <div class="lookbook-item reveal delay-2">
+        <h3>Drop limitado</h3>
+        <p>
+          A ideia é lançar poucas peças para testar interesse antes de criar estoque.
+        </p>
+      </article>
+
+      <article class="card">
         <span>03</span>
-        <p>Washed black / layered fit / night city</p>
-      </div>
+        <h3>Referência sutil</h3>
+        <p>
+          Inspiração anime-inspired, mas com linguagem visual de moda urbana.
+        </p>
+      </article>
     </section>
 
-    <section class="waitlist section-padding" id="waitlist">
-      <div class="waitlist-box reveal">
-        <p class="eyebrow">Lista de espera</p>
-        <h2>Entre antes do Drop 01.</h2>
-        <p>Receba prévias, vote nas estampas e seja avisado quando a primeira peça sair.</p>
+    <section class="manifesto" id="manifesto">
+      <p class="tag">Manifesto</p>
 
-        <form class="waitlist-form" action="https://formsubmit.co/seuemail@email.com" method="POST">
-          <input type="hidden" name="_subject" value="Novo interessado no Drop 01">
-          <input type="hidden" name="_captcha" value="false">
-          <label for="name">Nome</label>
-          <input id="name" name="name" type="text" placeholder="Seu nome" required>
+      <h2>Não é cosplay. Não é fantasia. É streetwear.</h2>
 
-          <label for="email">E-mail</label>
-          <input id="email" name="email" type="email" placeholder="seuemail@email.com" required>
+      <p>
+        A NOIRVOID nasce para transformar referências visuais da cultura anime,
+        energia e caos em peças usáveis no dia a dia. Quem conhece, reconhece.
+        Quem não conhece, ainda vê uma camiseta forte.
+      </p>
+    </section>
 
-          <button class="button button-primary" type="submit">Entrar na lista</button>
-        </form>
+    <section class="waitlist" id="lista">
+      <p class="tag">Lista de espera</p>
 
-        <a class="whatsapp-link" href="https://wa.me/5541999999999?text=Quero%20entrar%20na%20lista%20do%20Drop%2001" target="_blank" rel="noopener">Ou entrar pelo WhatsApp</a>
-      </div>
+      <h2>Receba o Drop 01 antes de todo mundo.</h2>
+
+      <p>
+        Entre na lista para receber prévias da coleção, votação de estampas
+        e aviso quando a primeira camiseta estiver disponível.
+      </p>
+
+      <a
+        class="btn btn-primary"
+        href="https://wa.me/5541999999999?text=Quero%20entrar%20na%20lista%20do%20Drop%2001"
+        target="_blank"
+        rel="noopener"
+      >
+        Entrar pelo WhatsApp
+      </a>
+
+      <small>Troque o número do WhatsApp no HTML pelo seu número real.</small>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© 2026 NOIRVOID. Concept streetwear brand.</p>
-    <div>
-      <a href="https://instagram.com/seuinstagram" target="_blank" rel="noopener">Instagram</a>
-      <a href="#top">Voltar ao topo</a>
-    </div>
-  </footer>
+    <p>© 2026 NOIRVOID. Streetwear concept store.</p>
 
-  <script src="script.js"></script>
+    <a
+      href="https://instagram.com/seuinstagram"
+      target="_blank"
+      rel="noopener"
+    >
+      Instagram
+    </a>
+  </footer>
 </body>
 </html>
