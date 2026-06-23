@@ -1,11 +1,25 @@
-# NOIRVOID — Drop 01 Store
+# NOIRVOID — Streetwear Concept Store
 
-Loja conceito streetwear com foco em poucas estampas, coleção limitada e validação por voto.
+Site estático para GitHub Pages inspirado na estrutura de loja streetwear premium.
 
-## Como usar
+## Arquivos
 
-1. Envie `index.html`, `style.css`, `script.js` e a pasta `assets` para o GitHub.
-2. Coloque sua imagem em `assets/mockup-camiseta-01.png`.
-3. Troque o número do WhatsApp no `index.html`.
-4. Troque o link do Instagram no footer.
-5. Ative GitHub Pages em Settings > Pages > Deploy from a branch > main > root.
+- `index.html`
+- `style.css`
+- `script.js`
+- `assets/mockup-camiseta-01.png`
+
+## Como usar no GitHub
+
+1. Faça upload dos arquivos na raiz do repositório.
+2. Mantenha a imagem em `assets/mockup-camiseta-01.png`.
+3. Ative o GitHub Pages em Settings > Pages > Deploy from a branch > main > root.
+
+## Editar
+
+No `index.html`, troque:
+
+- `https://wa.me/5541999999999` pelo seu WhatsApp.
+- `https://instagram.com/seuinstagram` pelo Instagram da marca.
+- `seuemail@email.com` pelo seu e-mail.
+- Preços e nomes das peças, se quiser.

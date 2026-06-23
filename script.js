@@ -1,20 +1,28 @@
-const voteButtons = document.querySelectorAll('.vote-btn');
-const voteResult = document.getElementById('voteResult');
+const menuToggle = document.querySelector('.menu-toggle');
+const mainNav = document.querySelector('#mainNav');
 
-voteButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    const product = button.dataset.product;
-    voteResult.textContent = `Você escolheu: ${product}. Agora entre na lista para receber o aviso.`;
-    document.querySelector('#votacao').scrollIntoView({ behavior: 'smooth' });
+if (menuToggle && mainNav) {
+  menuToggle.addEventListener('click', () => {
+    const isOpen = mainNav.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
   });
+
+  mainNav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      mainNav.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+}
+
+const cookieBox = document.querySelector('#cookieBox');
+const acceptCookie = document.querySelector('#acceptCookie');
+
+if (localStorage.getItem('noirvoid-cookie-ok') === 'true') {
+  cookieBox?.classList.add('hide');
+}
+
+acceptCookie?.addEventListener('click', () => {
+  localStorage.setItem('noirvoid-cookie-ok', 'true');
+  cookieBox?.classList.add('hide');
 });
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('is-visible');
-    }
-  });
-}, { threshold: 0.12 });
-
-document.querySelectorAll('.reveal').forEach((item) => observer.observe(item));

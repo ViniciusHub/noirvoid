@@ -3,160 +3,197 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NOIRVOID — Drop 01</title>
-  <meta name="description" content="NOIRVOID Drop 01: streetwear anime-inspired com poucas estampas, visual premium e lista de espera." />
+  <title>NOIRVOID — Streetwear Concept Store</title>
+  <meta name="description" content="NOIRVOID: streetwear anime-inspired com drops limitados, camisetas oversized e visual premium." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="topbar">
+    <p>DROP 01 EM DESENVOLVIMENTO · LISTA DE ESPERA ABERTA · ENVIO BRASIL</p>
+  </div>
+
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="NOIRVOID home">NOIR<span>VOID</span></a>
-    <nav class="nav" aria-label="Menu principal">
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <a class="brand" href="#home">NOIRVOID</a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#mais-vendidos">Mais vendidos</a>
       <a href="#drop">Drop 01</a>
-      <a href="#pecas">Peças</a>
-      <a href="#votacao">Votação</a>
-      <a href="#lista">Lista</a>
+      <a href="#combos">Compre o drip</a>
+      <a href="#manifesto">Manifesto</a>
     </nav>
-    <a class="header-cta" href="#lista">Entrar na lista</a>
+
+    <a class="header-cta" href="#lista">Lista</a>
   </header>
 
-  <main id="top">
+  <main id="home">
     <section class="hero">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">Drop 01 / 003 peças conceito</p>
+      <div class="hero-copy">
+        <p class="eyebrow">Streetwear / Anime-inspired / Limited Drop</p>
         <h1>Poucas estampas. Mais desejo.</h1>
-        <p class="lead">
-          A NOIRVOID começa com uma coleção curta: três camisetas oversized com a mesma identidade visual. A peça mais votada vira a primeira produção real.
+        <p>
+          Uma loja conceito da NOIRVOID com visual premium, camisetas oversized e
+          referências sutis para quem entende sem precisar estar escrito.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#pecas">Ver as 3 peças</a>
-          <a class="btn btn-secondary" href="#votacao">Votar na favorita</a>
+          <a class="btn btn-dark" href="#mais-vendidos">Ver peças</a>
+          <a class="btn btn-light" href="#lista">Entrar na lista</a>
         </div>
       </div>
 
-      <div class="hero-visual reveal">
-        <img src="assets/mockup-camiseta-01.png" alt="Mockup conceito de camiseta oversized preta NOIRVOID" />
-        <div class="drop-badge">
-          <strong>01</strong>
-          <span>Concept sample</span>
-        </div>
+      <div class="hero-media">
+        <img src="assets/mockup-camiseta-01.png" alt="Mockup de camiseta oversized preta NOIRVOID" />
       </div>
     </section>
 
-    <section class="drop-intro" id="drop">
-      <div class="section-title reveal">
-        <p class="eyebrow">Estratégia do drop</p>
-        <h2>Não é catálogo infinito. É coleção limitada.</h2>
-      </div>
-      <div class="intro-grid">
-        <article class="intro-card reveal">
-          <span>01</span>
-          <h3>3 estampas principais</h3>
-          <p>Menos opção para não parecer loja genérica. Cada peça precisa ter motivo para existir.</p>
-        </article>
-        <article class="intro-card reveal">
-          <span>02</span>
-          <h3>1 identidade visual</h3>
-          <p>Preto, energia azul, arte pesada nas costas e detalhe pequeno no peito.</p>
-        </article>
-        <article class="intro-card reveal">
-          <span>03</span>
-          <h3>Produção pelo voto</h3>
-          <p>A comunidade escolhe a peça mais forte antes de gastar com camiseta real.</p>
-        </article>
-      </div>
+    <section class="strip-banner">
+      <span>NOIRVOID</span>
+      <span>DROP 01</span>
+      <span>VOID COLLECTION</span>
+      <span>OVERSIZED FIT</span>
+      <span>LIMITED CONCEPT</span>
     </section>
 
-    <section class="collection" id="pecas">
-      <div class="section-title reveal">
-        <p class="eyebrow">First collection</p>
-        <h2>Void Collection / 003</h2>
+    <section class="section" id="mais-vendidos">
+      <div class="section-head">
+        <p class="eyebrow">Curadoria inicial</p>
+        <h2>Mais desejadas do Drop</h2>
+        <a href="#lista">Votar na favorita</a>
       </div>
 
       <div class="product-grid">
-        <article class="product-card featured reveal">
-          <div class="product-media">
-            <img src="assets/mockup-camiseta-01.png" alt="Infinite Void Tee conceito" />
-          </div>
-          <div class="product-content">
-            <div class="product-topline">
-              <span>001</span>
-              <span>Hero piece</span>
-            </div>
+        <article class="product-card featured">
+          <a href="#lista" class="product-image">
+            <img src="assets/mockup-camiseta-01.png" alt="Infinite Void Tee" />
+            <span class="badge">Principal</span>
+          </a>
+          <div class="product-info">
             <h3>Infinite Void Tee</h3>
-            <p>A peça principal do drop: costas com arte grande, presença forte e detalhe pequeno no peito.</p>
-            <button class="vote-btn" data-product="Infinite Void Tee">Votar nessa</button>
+            <p>Oversized preta · back print · detalhe no peito</p>
+            <div class="price-row">
+              <strong>R$ 149,90</strong>
+              <span>conceito</span>
+            </div>
           </div>
         </article>
 
-        <article class="product-card reveal">
-          <div class="placeholder-art">
-            <span>002</span>
-            <strong>Blue Curse Tee</strong>
-          </div>
-          <div class="product-content">
-            <div class="product-topline">
-              <span>002</span>
-              <span>Clean back print</span>
-            </div>
+        <article class="product-card">
+          <a href="#lista" class="product-placeholder blue">
+            <span>BLUE CURSE</span>
+          </a>
+          <div class="product-info">
             <h3>Blue Curse Tee</h3>
-            <p>Versão mais limpa: arte abstrata azul, símbolo no peito e composição menos chamativa.</p>
-            <button class="vote-btn" data-product="Blue Curse Tee">Votar nessa</button>
-          </div>
-        </article>
-
-        <article class="product-card reveal">
-          <div class="placeholder-art light">
-            <span>003</span>
-            <strong>Hollow Signal Tee</strong>
-          </div>
-          <div class="product-content">
-            <div class="product-topline">
-              <span>003</span>
-              <span>Alternative color</span>
+            <p>Arte azul abstrata · frente clean · costas forte</p>
+            <div class="price-row">
+              <strong>R$ 139,90</strong>
+              <span>prévia</span>
             </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a href="#lista" class="product-placeholder light">
+            <span>HOLLOW SIGNAL</span>
+          </a>
+          <div class="product-info">
             <h3>Hollow Signal Tee</h3>
-            <p>Peça alternativa do drop: off-white, arte menor e vibe mais sofisticada.</p>
-            <button class="vote-btn" data-product="Hollow Signal Tee">Votar nessa</button>
+            <p>Off-white · estampa sutil · energia urbana</p>
+            <div class="price-row">
+              <strong>R$ 139,90</strong>
+              <span>prévia</span>
+            </div>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="vote-section" id="votacao">
-      <div class="vote-box reveal">
-        <p class="eyebrow">Validação antes da produção</p>
-        <h2>Qual camiseta você compraria primeiro?</h2>
+    <section class="collection-hero" id="drop">
+      <div>
+        <p class="eyebrow">Void Collection — Inverno 26</p>
+        <h2>Feito para vencer a noite.</h2>
         <p>
-          A ideia é produzir primeiro a peça com mais interesse. Clique em votar ou entre na lista para receber o aviso do Drop 01.
+          Drop pequeno, identidade forte e peças com cara de coleção. A proposta é validar
+          três estampas antes da produção física, mantendo a marca com ar limitado e premium.
         </p>
-        <div class="vote-result" id="voteResult">Nenhum voto selecionado ainda.</div>
-        <a class="btn btn-primary" href="#lista">Entrar na lista do Drop 01</a>
+      </div>
+      <a class="btn btn-light" href="#lista">Quero participar</a>
+    </section>
+
+    <section class="section split" id="combos">
+      <div class="split-card dark-card">
+        <p class="eyebrow">Oferta conceito</p>
+        <h2>2 camisetas por R$269</h2>
+        <p>
+          Estrutura de oferta para testar ticket médio. Quando a produção começar, esse bloco
+          pode virar promoção real ou combo de pré-venda.
+        </p>
+        <a href="#lista" class="btn btn-light">Entrar no combo</a>
+      </div>
+
+      <div class="split-card image-card">
+        <img src="assets/mockup-camiseta-01.png" alt="Compre o drip pronto NOIRVOID" />
+        <div class="image-overlay">
+          <p class="eyebrow">Compre o drip pronto</p>
+          <h2>Look completo NOIRVOID</h2>
+        </div>
       </div>
     </section>
 
-    <section class="manifesto reveal">
+    <section class="manifesto" id="manifesto">
       <p class="eyebrow">Manifesto</p>
-      <h2>Quem conhece, reconhece. Quem não conhece, ainda vê uma peça forte.</h2>
+      <h2>Não é cosplay. Não é fantasia. É streetwear.</h2>
       <p>
-        A NOIRVOID não quer ser uma loja com trinta artes aleatórias. O foco é construir desejo em cima de poucas peças, estética consistente e drops pequenos.
+        A NOIRVOID transforma referências de anime, energia e caos em roupa urbana.
+        Quem conhece reconhece. Quem não conhece ainda vê uma peça forte, usável e premium.
       </p>
     </section>
 
     <section class="waitlist" id="lista">
-      <div class="waitlist-inner reveal">
+      <div>
         <p class="eyebrow">Lista de espera</p>
-        <h2>Receba a primeira pré-venda.</h2>
-        <p>Entre pelo WhatsApp para receber as prévias, votar nas próximas estampas e saber quando a primeira peça real sair.</p>
-        <a class="btn btn-primary" href="https://wa.me/5541999999999?text=Quero%20entrar%20na%20lista%20do%20Drop%2001%20da%20NOIRVOID" target="_blank" rel="noopener">Entrar pelo WhatsApp</a>
-        <small>Troque o número no HTML pelo seu WhatsApp real.</small>
+        <h2>Vote na estampa que deve virar camiseta real.</h2>
+        <p>
+          Entre na lista para receber as prévias, votar na peça principal e ser avisado quando
+          o Drop 01 abrir.
+        </p>
       </div>
+
+      <form class="waitlist-form" action="mailto:seuemail@email.com" method="post" enctype="text/plain">
+        <input type="text" name="nome" placeholder="Seu nome" required />
+        <input type="email" name="email" placeholder="Seu e-mail" required />
+        <select name="favorita" required>
+          <option value="">Qual peça você compraria?</option>
+          <option>Infinite Void Tee</option>
+          <option>Blue Curse Tee</option>
+          <option>Hollow Signal Tee</option>
+        </select>
+        <button type="submit">Enviar voto</button>
+        <a class="whatsapp" href="https://wa.me/5541999999999?text=Quero%20entrar%20na%20lista%20NOIRVOID" target="_blank" rel="noopener">Entrar pelo WhatsApp</a>
+      </form>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© 2026 NOIRVOID — Drop 01 concept store.</p>
-    <a href="https://instagram.com/seuinstagram" target="_blank" rel="noopener">Instagram</a>
+    <div>
+      <strong>NOIRVOID</strong>
+      <p>Streetwear concept store · Curitiba / Brasil</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://instagram.com/seuinstagram" target="_blank" rel="noopener">Instagram</a>
+      <a href="#home">Voltar ao topo</a>
+    </div>
   </footer>
+
+  <div class="cookie" id="cookieBox">
+    <p>Ao continuar navegando, você concorda com o uso de cookies para melhorar a experiência.</p>
+    <button id="acceptCookie">Aceitar</button>
+  </div>
 
   <script src="script.js"></script>
 </body>
