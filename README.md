@@ -1,25 +1,24 @@
-# NOIRVOID — Streetwear Concept Store
+# NOIRVOID — GitHub Pages
 
-Site estático para GitHub Pages inspirado na estrutura de loja streetwear premium.
+Arquivos prontos para subir no GitHub Pages.
 
-## Arquivos
+## Estrutura
 
-- `index.html`
-- `style.css`
-- `script.js`
-- `assets/mockup-camiseta-01.png`
+```txt
+index.html
+style.css
+assets/
+  infinite-void-frente.png
+  infinite-void-verso.png
+```
 
-## Como usar no GitHub
+## Infinite Void Tee
 
-1. Faça upload dos arquivos na raiz do repositório.
-2. Mantenha a imagem em `assets/mockup-camiseta-01.png`.
-3. Ative o GitHub Pages em Settings > Pages > Deploy from a branch > main > root.
+Na vitrine, o produto usa:
 
-## Editar
+- imagem padrão: `assets/infinite-void-verso.png`
+- imagem no hover: `assets/infinite-void-frente.png`
 
-No `index.html`, troque:
+## Publicar
 
-- `https://wa.me/5541999999999` pelo seu WhatsApp.
-- `https://instagram.com/seuinstagram` pelo Instagram da marca.
-- `seuemail@email.com` pelo seu e-mail.
-- Preços e nomes das peças, se quiser.
+Suba tudo na raiz do repositório e ative em Settings > Pages > Deploy from a branch > main > /(root).
